@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+/* Zerando o CSS */
+
+* { 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Fundo-tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: url(./img/gif.gif);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat:no-repeat ;
+    background-position-x: 0;
+}
+
+/* Menu - Header - NavBar */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position:relative;
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #34E840;
+    transition: all 1.5s ease;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+
+main {
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-login {
+    background-color: rgba(59, 70, 19, 0.1);
+    background-blend-mode: color-burn;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 25%;
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    width:center;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 30px; 
+    color: white;
+    text-shadow: 0, 0, 10px, 10px, black;
+}
+
+.email > input {
+    display: block;
+    margin-top: auto;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: center;
+    width: 180px;
+    height: 28px;
+    border: 0;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    font-family: inherit;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #2CD54E;
+    
+}
+
+.email > input::placeholder {
+    color: white;
+}
+
+.senha > input {
+        display: block;
+        margin-top: auto;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: center;
+        width: 180px;
+        height: 28px;
+        border: 0;
+        border-bottom: 1px solid white;
+        background: transparent;
+        outline: none;
+        font-family: inherit;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+}
+
+.senha > input::placeholder {
+    color: white;
+}
+
+
+
+ /*.data {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 16px;
+    box-sizing: border-box;
+    letter-spacing: 0.2rem;
+    gap: 5px; 
+} */
+
+.btns {
+    letter-spacing: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 16px;
+}
+
+#Voltar {
+    padding: 8px 25px;
+    width: 110px;
+    align-items: center;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    outline: 0;
+} 
+
+#Cadastrar {
+    padding: 8px 25px;
+    width: 110px;
+    align-items: center;
+    font-size: 14px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    outline: 0;
+}
+#Voltar:hover {
+    background-color: #34E840;
+    color: green;
+}
+
+#Cadastrar:hover {
+    background-color: white;
+    color: green;
+}
+
+/* .btn-voltar {
+    letter-spacing: 0.2rem;
+    display: absolute;
+    padding: 8px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-cadastrar {
+    letter-spacing: 0.2rem;
+    display: absolute;
+    padding: 8px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+} */
+
+
+/* Rodape e contato */
+
+footer {
+    height: 7vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.contatos-itens {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.contatos-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position:relative;
+}
+
+.contatos-itens a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: all 1.5s ease;
+}
+
+.contatos-itens a:hover:before { 
+    width: 100%;
+}
